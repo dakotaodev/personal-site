@@ -1,0 +1,33 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<h3>About Me</h3>
+			<p>
+				<b>Professionally:</b> currently working as a Senior AI Engineer & Technical Anchor @ Cotality. Architecting & implementing agentic systems. Georgia Tech MS.
+			</p>
+			<p>
+				<b>Personally:</b> Husband, Dog Dad, Future Dad, enjoying things as they come.
+			</p>
+			<p>
+				<b>Hoping:</b> to use this as a site to share my explorations, learnings & thoughts.
+			</p>
+			<p>
+				It would be a shame if this picture of my dog was not shared:
+				<img src="/src/assets/winston.jpg"></img>
+			</p>
+		</main>
+		<Footer />
+	</body>
+</html>
